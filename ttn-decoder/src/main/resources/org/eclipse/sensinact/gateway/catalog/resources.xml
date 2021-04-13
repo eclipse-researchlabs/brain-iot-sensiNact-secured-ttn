@@ -1,0 +1,93 @@
+<!--
+ ~ Copyright (c) 2020 Kentyou.
+ ~ All rights reserved. This program and the accompanying materials
+ ~ are made available under the terms of the Eclipse Public License v1.0
+ ~ which accompanies this distribution, and is available at
+ ~ http://www.eclipse.org/legal/epl-v10.html
+ ~
+ ~ Contributors:
+ ~    Kentyou - initial API and implementation
+-->
+<resourceInfos xmlns="http://org.eclipse.sensinact/resource" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://org.eclipse.sensinact/resource ./sensinact-resource.xsd" empty_profile="true">
+    <resourceInfo xsi:type="resourceInfoSensor" name="FREQUENCY" target="system">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">description</identifier>
+        <attributes>
+            <attribute name="value" type="double">
+                <metadata>
+                    <meta name="Unit" type="string">
+                        <value>Hz</value>
+                    </meta>
+                </metadata>
+            </attribute>
+        </attributes>
+    </resourceInfo>
+    <resourceInfo xsi:type="resourceInfoSensor" name="MODULATION" target="system">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">description</identifier>
+        <attributes>
+            <attribute name="value" type="string"/>
+        </attributes>
+    </resourceInfo>
+    <resourceInfo xsi:type="resourceInfoSensor" name="DATA_RATE" target="system">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">description</identifier>
+        <attributes>
+            <attribute name="value" type="string"/>
+        </attributes>
+    </resourceInfo>
+    <resourceInfo xsi:type="resourceInfoSensor" name="CODING_RATE" target="system">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">description</identifier>
+        <attributes>
+            <attribute name="value" type="string"/>
+        </attributes>
+    </resourceInfo>
+    <resourceInfo xsi:type="resourceInfoSensor" name="LITERS" target="content">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">liters</identifier>
+        <attributes>
+            <attribute name="value" type="int">
+                <metadata>
+                    <meta name="Unit" type="string">
+                        <value>Liter</value>
+                    </meta>
+                    <meta name="Description" type="string">
+                        <value>Liters per period</value>
+                    </meta>
+                </metadata>
+            </attribute>
+        </attributes>
+    </resourceInfo>
+    <resourceInfo xsi:type="resourceInfoSensor" name="TOTAL_LITERS" target="content">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">total_liters</identifier>
+        <attributes>
+            <attribute name="value" type="double">
+                <metadata>
+                    <meta name="Unit" type="string">
+                        <value>m3</value>
+                    </meta>
+                    <meta name="Description" type="string">
+                        <value>Total liters since device commissioning (in m3)</value>
+                    </meta>
+                </metadata>
+            </attribute>
+        </attributes>
+    </resourceInfo> 
+    <resourceInfo xsi:type="resourceInfoSensor" name="LEVEL_BATTERY" target="content">
+        <policy name="SENSOR"/>
+        <identifier xsi:type="stringContent">level_battery</identifier>
+        <attributes>
+            <attribute name="value" type="string"></attribute>
+        </attributes>
+    </resourceInfo>   
+    <resourceInfo xsi:type="resourceInfoProperty" name="SECURED" target="content">
+        <policy name="PROPERTY" />
+        <identifier xsi:type="stringContent">secured</identifier>
+        <attributes>
+            <attribute name="value" type="int"/>
+        </attributes>
+    </resourceInfo>
+</resourceInfos>
